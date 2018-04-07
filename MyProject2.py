@@ -95,7 +95,7 @@ def start(bot, update, user_data):
     user_data['links'] = []
     user_data['links2'] = []
     random.shuffle(user_data['english_words'])
-    update.message.reply_text("Добрый день. Я бот, который помогает выучить английские слова.")
+    update.message.reply_text("Добрый день. Я бот, который помогает выучить английские слова. Отправьте /go для начала обучения, или /slova 'список Ваших слов'. Переведено сервисом 'Яндекс.Переводчик' http://translate.yandex.ru/.")
 def stop(bot, update, user_data):
     update.message.reply_text(
         str(user_data['balls']) + " правильных ответа и " + str(user_data['notballs']) + " неправильных.")
